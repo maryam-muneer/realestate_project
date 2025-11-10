@@ -38,7 +38,7 @@ PROJECT STRUCTURE
 ├── php/
 │   ├── connect.php         # MySQL database connection
 │   ├── login.php           # Handles admin login
-│   └── contact-process.php # Stores contact form messages into database
+│   └── contact_submit.php # Stores contact form messages into database
 │
 ├── images/
 │   └── logo.jpg            # Website logo and background assets
