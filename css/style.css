@@ -1,6 +1,6 @@
  /* ==========================================================
    🏠 Seven 8 Six Associates - Main Stylesheet
-   Author: [Your Name]
+   Author: MARYAM MUNEER
    Description: Responsive real estate website design
    ========================================================== */
 
@@ -16,9 +16,21 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
+.home-page {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.home-page footer {
+  margin-top: auto;
+}
+.home-page .hero {
+  flex: 1;
+}
 
  /* ======================================
-   🔸 NAVBAR (Universal Responsive)
+    NAVBAR (Universal Responsive)
 ====================================== */
 nav.navbar {
   width: 100%;
@@ -142,7 +154,7 @@ nav.navbar {
 }
 
 /* ==========================================================
-   🌇 HERO SECTION (Landing Area)
+    HERO SECTION (Landing Area)
    ========================================================== */
 .hero {
   position: relative;
@@ -155,7 +167,6 @@ nav.navbar {
   overflow: hidden;
 }
 
-/* Background image with soft zoom animation */
 .hero-background {
   background-image: url(https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1167);
   background-size: cover;
@@ -177,7 +188,7 @@ nav.navbar {
    display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px; /* space between title, paragraph and button */
+  gap: 16px; 
   max-width: 900px;
   padding: 0 20px;
 }
@@ -192,7 +203,7 @@ nav.navbar {
   to { transform: scale(1.1); }
 }
 
-/* Call-to-action button style */
+
 .btn {
   background-color: #ff5b2e;
   color: white;
@@ -207,7 +218,7 @@ nav.navbar {
   margin-top: 8px;
 }
 
-/* Button hover glow effect */
+
 .btn::after {
   content: "";
   position: absolute;
@@ -238,7 +249,7 @@ nav.navbar {
   animation: bgZoom 10s ease-in-out infinite alternate;
 }
 
-/* Overlay for darker effect */
+
 .about-overlay {
   position: absolute;
   inset: 0;
@@ -443,12 +454,11 @@ form button {
 form button:hover { background-color: #76c043; }
 
 .login-section {
-  /* Use padding instead of a fixed height so footer appears directly after the form */
   padding: 80px 20px;
   background: linear-gradient(135deg, #0f204b, #182b73);
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* keep the login box near the top */
+  align-items: flex-start; 
 }
 
 .login-box {
